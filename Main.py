@@ -15,9 +15,9 @@ if __name__ == "__main__":
         print("$: Salir")
         opcion = int(input())
         if opcion == 1:
-            m.Temperatura(D,T)
-            m.Humedad(D,T)
-            m.Presion(D,T)
+            m.minTemperatura(D,T)
+            m.minHumedad(D,T)
+            m.minPresion(D,T)
         elif opcion == 2:
             print("La temperatura promedio es:")
             print(m.temperaturaPromedio(D, T))
