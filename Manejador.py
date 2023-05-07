@@ -9,7 +9,7 @@ class Manejador:
     def agregarregistro(self, dia, hora, unregistro):
         self.__lista[dia - 1][hora - 1] = unregistro
 
-    def Temperatura(self, D, T):
+    def minTemperatura(self, D, T):
         min = 100
         i = 0
         while i < D:
@@ -23,7 +23,7 @@ class Manejador:
             i = i + 1
         print(f"Los Datos con mas baja temperatura es el DIA: {Dia}, a la HORA: {Hora}")
 
-    def Humedad(self, D, T):
+    def minHumedad(self, D, T):
         min = 100
         i = 0
         while i < D:
@@ -37,7 +37,7 @@ class Manejador:
             i = i + 1
         print(f"Los Datos con mas baja Humedad es el DIA: {Dia}, a la HORA: {Hora}")
 
-    def Presion(self, D, T):
+    def minPresion(self, D, T):
         min = 100
         i = 0
         while i < D:
