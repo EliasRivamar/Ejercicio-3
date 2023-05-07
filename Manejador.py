@@ -50,6 +50,20 @@ class Manejador:
                 j = j + 1
             i = i + 1
         print(f"El Datos con mas baja Presion Atmosferica es el DIA: {Dia}, a la HORA: {Hora}")
+        
+     def temperaturaPromedio(self, D, T):
+        i = 0
+        while i < T:
+            j = 0
+            promedio = 0
+            total = 0
+            while j < D:
+                total = Registro.getTemperatura(self.__lista[j][i]) + total
+                j = j + 1
+            promedio = total / T
+            print("La temperatura promedio en la Hora {} es de {}".format(i+1, promedio))
+            i = i + 1
+
 
     def mostarDia(self, dia, D, T):
         i = 0
